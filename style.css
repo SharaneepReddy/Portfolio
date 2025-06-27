@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: #e7e7e7;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    height: 80px;
+    background-color: rgb(4, 3, 5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #e7e7e7;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+nav ul li a:hover {
+    color: rgb(221, 5, 221)
+}
+
+nav ul li {
+    list-style:none;
+    margin: 0 25px;
+}
+
+.left {
+    height: 1.5rem;
+}
+
+/* ===== FIRST SECTION ===== */
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 23px 0;   
+}
+
+
+.first > div{
+    width: 35%;
+}
+.leftsec {
+    background-color: rgb(0, 0, 0);
+    font-size: 2.2rem;
+}
+.pu {
+    color: rgb(221, 5, 221)
+}
+#element {
+    color: rgb(221, 5, 221)
+}
+.rightsec {
+    background-color: rgb(0, 0, 0);
+}
+
+/* ===== ABOUT =====*/
+#about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col1{
+    flex-basis: 35%;
+}
+
+.about-col1 img{
+    border-radius: 15px;
+    width: 450px;
+    margin-left: 88px;
+}
+
+.about-col2 {
+    flex-basis: 60%;
+    margin-right: 23px;
+}
+
+.about__title{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about__subtitle {
+    font-size: 2rem;
+    
+}
+
+.about__text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* ==== WORK SECTION ==== */
+#projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000;
+    padding: 2rem;
+    margin: 3rem 0;
+}
+.section-title {
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+
+.work__container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.work__item {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-left: 4px solid rgb(221, 5, 221);
+    border-radius: 8px;
+    min-width: 250px;
+}
+.hidden-project {
+    display: none;
+}
+
+.show-more-container {
+    text-align: center;
+    margin-top: 1rem;
+}
+.work__item a {
+    text-decoration: none;
+    color:#e7e7e7;
+    
+}
+
+
+
+
+/* ==== SKILLS SECTION ==== */
+#skills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+.section-title1 {
+    font-size: 3rem;
+    margin-bottom :2rem;
+    margin-left: 3rem;
+}
+
+.skills__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.skills__list {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.skills__list li {
+    background-color: #1a1a1a;
+    padding: 1rem 1.5rem;
+    border-left: 4px solid rgb(221, 5, 221);
+    border-radius: 8px;
+}
+
+/* ==== CONTACT SECTION ==== */
+#contact {
+    padding: 4rem 2rem;
+    background-color: black;
+    color: white;
+}
+
+.contact__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact__info-box {
+    flex: 1;
+    min-width: 250px;
+        margin: 0 1rem;
+    font-size: 1.5rem;
+   
+}
+.contact__info-box a {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: inline-block;  
+    color: rgb(221, 5, 221);
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.section-title2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: rgb(221, 5, 221);
+}
+
+.contact__form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact__input, .contact__button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact__input {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.contact__button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact__button:hover {
+    background-color: rgb(221, 5, 221);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact__container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .section-title2 {
+        text-align: center;
+    }
+
+    .contact__form, .contact__info-box {
+        width: 100%;
+    }
+}
+
+
+
+/* ==== FOOTER ==== */
+.footer {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer__title {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.footer__social a {
+    color: rgb(221, 5, 221);
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.footer__copy {
+    color: #aaa;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* === Scroll Fix for Fixed Navbar === */
+#about, #work, #skills, #contact {
+    scroll-margin-top: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.2rem;
+  background-color: rgb(221, 5, 221);
+  color: #fff;
+  padding: 0.5rem 1rem;
+    border-radius: 15px;
+  text-decoration: none;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(221, 5, 221, 0.5);
+}
+
+.scroll-up:hover {
+  background-color: #fff;
+  color: rgb(221, 5, 221);
+}
+
+
+
+/* === Hamburger Menu === */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #e7e7e7;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
